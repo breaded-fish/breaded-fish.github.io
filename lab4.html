@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CISC3610 EM6 - Ving's Website - Lab 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">
+              <img src="resource/logo.png" width="85" height="33" alt="">
+            </a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mr-auto">
+                <!--Home-->
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+
+                <!-- Drop down bar for Resume-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Resume
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="resume-summary.html">Summary</a>
+                      <a class="dropdown-item" href="resume-education.html">Education and Certifications</a>
+                      <a class="dropdown-item" href="resume-experience.html">Experience</a>
+                    </div>
+                </li>
+
+                <!--Assignments--> 
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Assignments
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="assignment1.html">Assignment 1: Cartoon</a>
+                    <a class="dropdown-item" href="assignment2.html">Assignment 2: Simple Animation</a>
+                    <a class="dropdown-item" href="assignment3.html">Assignment 3: Chart.js</a>
+                  </div>
+              </li>
+
+              <!--Labs-->  
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Labs
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="lab1.html">Lab 1: Canvas Chart</a>
+                    <a class="dropdown-item" href="lab2.html">Lab 2: Animated Count</a>
+                    <a class="dropdown-item" href="lab3.html">Lab 3: Simple Notebook</a>
+                    <a class="dropdown-item" href="lab4.html">Lab 4: Phaser Drag & Drop</a>
+                    <a class="dropdown-item" href="lab5.html">Lab 5: Audio</a>
+                    <a class="dropdown-item" href="lab6.html">Lab 6: Video IFrames</a>
+                  </div>
+              </li>
+
+                <li class="nav-item">
+                    <a href="https://github.com/breaded-fish/breaded-fish.github.io" class="nav-link">Github</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--Scripts required for Nav Bar-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+
+    <!--Main location of code-->
+    <div class="row text-center my-row">
+        <div class="col my-col">
+            <h1>Lab 4</h1>
+        </div>
+      </div>
+  
+      <div class="row text-center my-row">
+        <div class="col-sm-12 col-xl-5 my-phaser">
+          <h3>Instructions: Press the button to start the game.</h3>
+          <h4>There is no objective to this game. You just drag the avaiable objects, in which has specific physics tied to them.</h4>
+  
+          <div id='phaser-game'>
+            <!--Start game button-->
+            <p><input id="startGameButton" type="button" value="Start Game"></p>
+            <!--Scripts for the game-->
+            <script src="resource/Labs/phaserGame/phaser.min.js"></script>
+            <script src="resource/Labs/phaserGame/main.js"></script>
+            <script src ="resource/Labs/phaserGame/sceneMain.js"></script>
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-xl-7 my-assignment">
+          <h2>Raw Javascript Code</h2>
+          <script src="https://gist.github.com/breaded-fish/27e8eb59dc5d98eb69e3bd8bf07e07b2.js"></script>
+          <script src="https://gist.github.com/breaded-fish/45edf19047847f9c71f097124d5e274b.js"></script>
+        </div>
+      </div>
+</body>
+
+</html>
