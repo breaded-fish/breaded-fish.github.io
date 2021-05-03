@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CISC3610 EM6 - Ving's Website - Assignment 3 </title>
+    <title>CISC3610 EM6 - Ving's Website - Lab 3-4</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -48,7 +48,7 @@
                     <a class="dropdown-item" href="assignment2.html">Assignment 2: Simple Animation</a>
                     <a class="dropdown-item" href="assignment3.html">Assignment 3: Chart.js</a>
                   </div>
-                </li>
+              </li>
 
                 <!--Labs-->  
                 <li class="nav-item dropdown">
@@ -62,7 +62,6 @@
                     </div>
                 </li>
 
-                <!--Github Link-->
                 <li class="nav-item">
                     <a href="https://github.com/breaded-fish/breaded-fish.github.io" class="nav-link">Github</a>
                 </li>
@@ -78,38 +77,67 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-        
-<div class="row text-center my-row">
-  <div class="col my-col">
-      <h1>Assignment 3</h1>
-  </div>
-</div>
 
-<div class="row text-center my-row">
-  <div class="col-sm-12 col-xl-6 text-center my-charts">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
-    <h1>Grouped Bar Chart</h1>
-    <canvas id="canvas_grouped_barchart" width="800" height="450"></canvas>
-    <script src="resource/Assignments/chart/canvas_grouped_barchart.js"></script>
-    
-    <h1>Horizontal Bar Chart</h1>
-    <canvas id="canvas_horizontal_barchart" width="800" height="450"></canvas>
-    <script src="resource/Assignments/chart/canvas_horizontal_barchart.js"></script>
-
-  </div>
+    <!--Main location of code-->
+    <div class="row text-center my-row">
+        <div class="col my-col">
+            <h1>Lab 3</h1>
+        </div>
+    </div>
   
-  <div class="col-sm-12 col-xl-6 my-assignment">
-    <h2>Raw Javascript Code</h2>
-    <script src="https://gist.github.com/breaded-fish/a737b2d395161c3fa6eeb233ab761502.js"></script>
+    <div class="row text-center my-row">
+      <div class="col-sm-12 col-xl-6 my-assignment">
+        <h1>Notebook</h1>
 
-    <h2>Raw Javascript Code</h2>
-    <script src="https://gist.github.com/breaded-fish/7e3373775c265d99dddf354da6f4aed7.js"></script>
+        <!-- Beginning of form-->
+        <form action="" method="get">
+          <label for="noteTitle">Note Title:</label>
+          <!--Note title-->
+          <input type="text" id="noteTitle" name="noteTitle" min="1" max="40"><br><br>
+  
+          <!--Actual notes-->
+          <textarea id="notes" name="notes" rows="10" cols="35"></textarea>
+  
+          <!--Clear button-->
+          <p><button id="clearButton" type="button">Clear</button></p>
+          <script src="resource/Labs/notebook/lab_notes_input.js"></script>
+        </form> 
+      </div>
+  
+      <div class="col-sm-12 col-xl-6 my-assignment">
+        <h2>Raw Javascript Code</h2>
+        <script src="https://gist.github.com/breaded-fish/77f7408894a18244fe31ed5bd2aeb921.js"></script>
+      </div>
+    </div>
+
+    <div class="row text-center my-row">
+      <div class="col my-col">
+          <h1>Lab 4</h1>
+      </div>
+    </div>
+
+  <!-- Lab 4-->
+  <div class="row text-center my-row">
+    <div class="col-sm-12 col-xl-6 my-phaser">
+      <h3>Instructions: Press the button to start the game.</h3>
+      <h4>There is no objective to this game. You just drag the avaiable objects, in which has specific physics tied to them.</h4>
+
+      <div id='phaser-game'>
+        <!--Start game button-->
+        <p><input id="startGameButton" type="button" value="Start Game"></p>
+        <!--Scripts for the game-->
+        <script src="resource/Labs/phaserGame/phaser.min.js"></script>
+        <script src="resource/Labs/phaserGame/main.js"></script>
+        <script src ="resource/Labs/phaserGame/sceneMain.js"></script>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-xl-6 my-assignment">
+      <h2>Raw Javascript Code</h2>
+      <script src="https://gist.github.com/breaded-fish/27e8eb59dc5d98eb69e3bd8bf07e07b2.js"></script>
+      <script src="https://gist.github.com/breaded-fish/45edf19047847f9c71f097124d5e274b.js"></script>
+    </div>
   </div>
-
-
-</div>
-
 </body>
 
 </html>

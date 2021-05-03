@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CISC3610 EM6 - Ving's Website - Assignment 3 </title>
+    <title>CISC3610 EM6 - Ving's Website - Lab 1-2</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -40,14 +40,14 @@
 
                 <!--Assignments--> 
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Assignments
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="assignment1.html">Assignment 1: Cartoon</a>
-                    <a class="dropdown-item" href="assignment2.html">Assignment 2: Simple Animation</a>
-                    <a class="dropdown-item" href="assignment3.html">Assignment 3: Chart.js</a>
-                  </div>
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Assignments
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="assignment1.html">Assignment 1: Cartoon</a>
+                      <a class="dropdown-item" href="assignment2.html">Assignment 2: Simple Animation</a>
+                      <a class="dropdown-item" href="assignment3.html">Assignment 3: Chart.js</a>
+                    </div>
                 </li>
 
                 <!--Labs-->  
@@ -62,7 +62,6 @@
                     </div>
                 </li>
 
-                <!--Github Link-->
                 <li class="nav-item">
                     <a href="https://github.com/breaded-fish/breaded-fish.github.io" class="nav-link">Github</a>
                 </li>
@@ -78,38 +77,60 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-        
-<div class="row text-center my-row">
-  <div class="col my-col">
-      <h1>Assignment 3</h1>
-  </div>
-</div>
 
-<div class="row text-center my-row">
-  <div class="col-sm-12 col-xl-6 text-center my-charts">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
-    <h1>Grouped Bar Chart</h1>
-    <canvas id="canvas_grouped_barchart" width="800" height="450"></canvas>
-    <script src="resource/Assignments/chart/canvas_grouped_barchart.js"></script>
-    
-    <h1>Horizontal Bar Chart</h1>
-    <canvas id="canvas_horizontal_barchart" width="800" height="450"></canvas>
-    <script src="resource/Assignments/chart/canvas_horizontal_barchart.js"></script>
-
-  </div>
+    <!--Main location of code-->
+    <!--Lab 1-->
+    <div class="row text-center my-row">
+        <div class="col my-col">
+            <h1>Lab 1</h1>
+        </div>
+      </div>
   
-  <div class="col-sm-12 col-xl-6 my-assignment">
-    <h2>Raw Javascript Code</h2>
-    <script src="https://gist.github.com/breaded-fish/a737b2d395161c3fa6eeb233ab761502.js"></script>
+      <div class="row text-center my-row">
+        <div class="col-sm-12 col-xl-6 my-assignment">
+            <!-- This code references the canvas-->
+			<h1>Chart Program</h1>
+			<canvas id="canvas_chart" width="600" height="600"></canvas>
+			<script src="resource/Labs/canvas_chart/canvas_chart.js"></script>
+        </div>
+  
+        <div class="col-sm-12 col-xl-6 my-assignment">
+            <!-- Script references code from my github page and allows the user to view code-->
+            <h2>Raw Javascript Code</h2>
+            <script src="https://gist.github.com/breaded-fish/e39c68368e35034e0c406b74bc2d00fe.js"></script>
+        </div>
+    </div>
 
-    <h2>Raw Javascript Code</h2>
-    <script src="https://gist.github.com/breaded-fish/7e3373775c265d99dddf354da6f4aed7.js"></script>
-  </div>
+    <!--Lab 2-->
+    <div class="row text-center my-row">
+        <div class="col my-col">
+            <h1>Lab 2</h1>
+        </div>
+      </div>
+  
+      <div class="row text-center my-row">
+        <div class="col-sm-12 col-xl-6 my-lab">
+				  <!-- This code references the canvas-->
+			  	<h1>Animated Count</h1>
+				  <canvas id="canvas_count" width="200" height="144"></canvas>
 
+			  	<!-- This code references the button-->
+			  	<p><input id="startButton" type="button" value="Start"></p>
+			  	<script src="resource/Labs/canvas_count/canvas_count.js"></script>
+        </div>
+  
+        <div class="col-sm-12 col-xl-6 my-assignment">
+				  <h2>Sprite Sheet</h2>
+				  <img src = "resource/Labs/canvas_count/numbers/spritesheet.png" alt = "spritesheet">
 
-</div>
+			  	<!-- Script references code from my github page and allows the user to view code-->
+				  <h2>Raw Javascript Code</h2>
+				  <script src="https://gist.github.com/breaded-fish/dab7c30c5324c8a1b9cd6e0630b92069.js"> </script>
 
+			  	<!--<h3>JSON Array</h3>
+				  <script src="https://gist.github.com/breaded-fish/dab40e702a89500412de6c8f390d9297.js"></script>-->
+          </div>
+      </div>
 </body>
 
 </html>

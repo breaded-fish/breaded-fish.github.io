@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CISC3610 EM6 - Ving's Website - Assignment 3 </title>
+    <title>CISC3610 EM6 - Ving's Website - Lab 5-6</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -62,7 +62,6 @@
                     </div>
                 </li>
 
-                <!--Github Link-->
                 <li class="nav-item">
                     <a href="https://github.com/breaded-fish/breaded-fish.github.io" class="nav-link">Github</a>
                 </li>
@@ -78,38 +77,67 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-        
-<div class="row text-center my-row">
-  <div class="col my-col">
-      <h1>Assignment 3</h1>
-  </div>
-</div>
 
-<div class="row text-center my-row">
-  <div class="col-sm-12 col-xl-6 text-center my-charts">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-
-    <h1>Grouped Bar Chart</h1>
-    <canvas id="canvas_grouped_barchart" width="800" height="450"></canvas>
-    <script src="resource/Assignments/chart/canvas_grouped_barchart.js"></script>
-    
-    <h1>Horizontal Bar Chart</h1>
-    <canvas id="canvas_horizontal_barchart" width="800" height="450"></canvas>
-    <script src="resource/Assignments/chart/canvas_horizontal_barchart.js"></script>
-
-  </div>
+    <!--Main location of code-->
+    <div class="container">
+      <div class="row text-center my-row">
+        <div class="col my-col">
+            <h1>Lab 5</h1>
+        </div>
+      </div>
   
-  <div class="col-sm-12 col-xl-6 my-assignment">
-    <h2>Raw Javascript Code</h2>
-    <script src="https://gist.github.com/breaded-fish/a737b2d395161c3fa6eeb233ab761502.js"></script>
+      <div class="row text-center my-row">
+        <div class="col-sm-12 col-xl-6">
+         <!--button-->
 
-    <h2>Raw Javascript Code</h2>
-    <script src="https://gist.github.com/breaded-fish/7e3373775c265d99dddf354da6f4aed7.js"></script>
-  </div>
+          <ul class="list-group">
+            <li class="list-group-item"><input type="range" min="1" max="100" value="50" class="slider" id="volume"></li>
+            <p>Volume: <span id="volumeValue"></span></p>
+            <li class="list-group-item"><button id="fartButton" type="button" class="btn btn-primary">Fart</button></li>
+            <li class="list-group-item"><button id="bellButton" type="button" class="btn btn-primary">Bell</button></li>
+            <li class="list-group-item"><button id="morseButton" type="button" class="btn btn-primary">Morse Code</button></li>
+            <li class="list-group-item"><button id="dialButton" type="button" class="btn btn-primary">Dial Tone</button></li>
+            <li class="list-group-item"><button id="hornButton" type="button" class="btn btn-primary">Horn</button></li>
+          </ul>
+          <script src="resource/Labs/sound_lab/play_sound.js"></script>
+        </div>
 
+        <div class="col-sm-12 col-xl-6">
+          <h2>Raw Javascript Code</h2>
+          <script src="https://gist.github.com/breaded-fish/7674428b73d341693814e986de642277.js"></script>
+        </div>
+      </div>
+    </div>
 
-</div>
+    <div class="container">
+      <div class="row text-center my-row">
+        <div class="col my-col">
+            <h1>Lab 6</h1>
+        </div>
+      </div>
+  
+      <div class="row justify-content-around text-center my-row">
+        <div class="col-sm-12 col-xl-3">
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
 
+        <div class="col-sm-12 col-xl-3">
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/I45-dv-creU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-sm-12 col-xl-3">
+          <iframe width="300" height="200" src="https://www.youtube.com/embed/yXcW33lU2R4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+
+      <div class="row text-center my-row">
+        <div class="col my-col">
+          <h3>HTML Code Snippet</h3>
+          <script src="https://gist.github.com/breaded-fish/1c673b915d5b8cc44945a583561a0fd0.js"></script>
+        </div>
+      </div>
+    </div>
+    
 </body>
 
 </html>

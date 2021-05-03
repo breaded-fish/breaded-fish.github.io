@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CISC3610 EM6 - Ving's Website - Assignment 3 </title>
+    <title>CISC3610 EM6 - Ving's Website - Assignment 1-2</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -28,27 +28,27 @@
 
                 <!-- Drop down bar for Resume-->
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Resume
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="resume-summary.html">Summary</a>
-                      <a class="dropdown-item" href="resume-education.html">Education and Certifications</a>
-                      <a class="dropdown-item" href="resume-experience.html">Experience</a>
-                    </div>
-                </li>
-
-                <!--Assignments--> 
-                <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Assignments
+                    Resume
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="assignment1.html">Assignment 1: Cartoon</a>
-                    <a class="dropdown-item" href="assignment2.html">Assignment 2: Simple Animation</a>
-                    <a class="dropdown-item" href="assignment3.html">Assignment 3: Chart.js</a>
+                    <a class="dropdown-item" href="resume-summary.html">Summary</a>
+                    <a class="dropdown-item" href="resume-education.html">Education and Certifications</a>
+                    <a class="dropdown-item" href="resume-experience.html">Experience</a>
                   </div>
-                </li>
+              </li>
+
+                <!--Assignments--> 
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Assignments
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="assignment1-2.html">Assignment 1: Cartoon | Assignment 2: Simple Animation</a>
+                  <a class="dropdown-item" href="assignment3.html">Assignment 3: Chart.js</a>
+                  <a class="dropdown-item" href="assignment3.html">Assignment 4: Phaser Game Project</a>
+                </div>
+              </li>
 
                 <!--Labs-->  
                 <li class="nav-item dropdown">
@@ -78,37 +78,56 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
-        
-<div class="row text-center my-row">
-  <div class="col my-col">
-      <h1>Assignment 3</h1>
-  </div>
-</div>
 
-<div class="row text-center my-row">
-  <div class="col-sm-12 col-xl-6 text-center my-charts">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <!--Main location of code-->
+    <!--Assignment 1-->
+    <div class="row text-center my-row">
+      <div class="col my-col">
+          <h1>Assignment 1</h1>
+      </div>
+    </div>
 
-    <h1>Grouped Bar Chart</h1>
-    <canvas id="canvas_grouped_barchart" width="800" height="450"></canvas>
-    <script src="resource/Assignments/chart/canvas_grouped_barchart.js"></script>
+    <div class="row align-items-center my-row">
+      <div class="col-sm-12 col-xl-6 text-center my-assignment">
+        <canvas id="canvas_cartoon" width="800" height="600"></canvas>
+        <script src="resource/Assignments/canvas_cartoon/canvas_cartoon.js"></script>
+      </div>
+
+      <div class="col-sm-12 col-xl-6 text-center my-assignment">
+        <!-- Script references code from my github page and allows the user to view code-->
+				<h2> Raw Javascript Code</h2>
+				<script src="https://gist.github.com/breaded-fish/7dc8064a054f97dd941e810003d417a6.js"></script>
+      </div>
+    </div>
+
+    <!--Assignment 2-->
+    <div class="row text-center my-row">
+      <div class="col my-col">
+          <h1>Assignment 2</h1>
+      </div>
+    </div>
     
-    <h1>Horizontal Bar Chart</h1>
-    <canvas id="canvas_horizontal_barchart" width="800" height="450"></canvas>
-    <script src="resource/Assignments/chart/canvas_horizontal_barchart.js"></script>
+    <div class="row text-center my-row">
+    
+      <div class="col-sm-12 col-xl-6 text-center my-assignment">
+        <canvas id="canvas_animation" width="800" height="600"></canvas>
+        <script src="resource/Assignments/planeanim/canvas_animation.js"></script>
+      </div>
+    
+      <div class="col-sm-12 col-xl-6 my-assignment">
+        <h2>Raw Javascript Code</h2>
+        <script src="https://gist.github.com/breaded-fish/a42cc4d7a065806a0c62282b116d7506.js"></script>
+    
+        <h3>JSON: plane_spritesheet</h3>
+        <script src="https://gist.github.com/breaded-fish/64c906474e234a1c2850723784d35e06.js"></script>
+    
+        <h3>JSON: smoke_spritesheet</h3>
+        <script src="https://gist.github.com/breaded-fish/8005fed9f35de568ec1520b1fc502ca8.js"></script>
+      </div>
+    
+    </div>
 
-  </div>
-  
-  <div class="col-sm-12 col-xl-6 my-assignment">
-    <h2>Raw Javascript Code</h2>
-    <script src="https://gist.github.com/breaded-fish/a737b2d395161c3fa6eeb233ab761502.js"></script>
-
-    <h2>Raw Javascript Code</h2>
-    <script src="https://gist.github.com/breaded-fish/7e3373775c265d99dddf354da6f4aed7.js"></script>
-  </div>
-
-
-</div>
+    
 
 </body>
 
