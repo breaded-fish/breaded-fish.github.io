@@ -85,13 +85,16 @@
     <div class="row text-center my-row">
       <div class="col my-col">
           <h1>Assignment 5: Speech Recognition</h1>
-          
+          <h2 class='text-danger'>Google Chrome Only</h2>
       </div>
     </div>
 
     <div class="row text-center my-row">
       <div class="col my-col">
         <canvas id="canvas_speech_objects" width="300" height="300"></canvas>
+        <p><button id="startSpeechButton" type="button" class="btn btn-primary">Speak</button></p>
+        <h4>Transcript:</h4>
+        <p id="page_transcript"></p>
       </div>
 
       <div class="col text-lg-left my-col">
@@ -101,12 +104,11 @@
         <h5>Say "About" to hear about my day.</h5>
       </div>
     </div>
-  
+
     <div class="row text-center my-row">
-      <div class="col my-col">
-          <button id="startSpeechButton" type="button" class="btn btn-primary">Speak</button>
-          <h4>Transcript:</h4>
-          <p id="page_transcript"></p>
+      <div class="col">
+        <h3>Raw Javascript Code</h3>
+        <script src="https://gist.github.com/breaded-fish/84d2b889325a98bf5a68898f949adb1f.js"></script>
       </div>
     </div>
     <script src="resource/Assignments/speech_recognition/speech.js"></script>
