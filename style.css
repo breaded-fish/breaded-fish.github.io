@@ -127,6 +127,10 @@ cursor: not-allowed;
 	border: 0px dotted black;
 }
 
+.my-col{
+	border: 0px solid black;
+}
+
 /*The following code is to customize gist code blocks*/
 
 .gist-data{
