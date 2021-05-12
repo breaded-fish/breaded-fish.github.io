@@ -120,7 +120,7 @@ cursor: not-allowed;
 }
 
 .my-splash{
-	height: 600px;
+	height: 700px;
 }
 
 .my-exp{
@@ -128,7 +128,7 @@ cursor: not-allowed;
 }
 
 .my-row{
-	border: 0px dotted black;
+	border: 1px dotted black;
 }
 
 .my-col{
